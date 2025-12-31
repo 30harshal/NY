@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year, My Special Someone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #fce4ec;
+            --accent-pink: #f06292;
+            --text-color: #5d4037;
+            --white-translucent: rgba(255, 255, 255, 0.7);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightpink;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-elements .element {
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: float 10s infinite linear;
+        }
+
+        .floating-elements .flower {
+            background-image: url('https://via.placeholder.com/50x50/ff69b4/ffffff?text=🌸');
+            width: 50px;
+            height: 50px;
+        }
+
+        .floating-elements .teddy {
+            background-image: url('https://via.placeholder.com/50x50/cd853f/ffffff?text=🧸');
+            width: 50px;
+            height: 50px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--accent-pink);
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        .heart-divider {
+            color: var(--accent-pink);
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .message-section {
+            background: var(--white-translucent);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            backdrop-filter: blur(5px);
+        }
+
+        .message-section p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Photo Grid */
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Specific layout for 5 items to look good on desktop */
+        @media (min-width: 768px) {
+            .memory-item:nth-child(1) { grid-column: span 2; }
+        }
+
+        .memory-item {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .memory-item:hover {
+            transform: translateY(-10px) rotate(2deg);
+        }
+
+        .memory-item img,
+        .memory-item video {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .memory-caption {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: var(--accent-pink);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 480px) {
+            header h1 { font-size: 2.5rem; }
+            .message-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Happy New Year too Shradhaaa!</h1>
+            <div class="heart-divider">❤︎ ❤︎ ❤︎</div>
+        </header>
+
+        <section class="message-section">
+            <p>To the incredible woman in my life,</p>
+            <p>As we step into another year, I wanted to take a moment to tell you how much you mean to me. You make every day brighter just by being yourself, 
+            <p>I hope your 2026 is filled with all the peace and happiness you deserve. I’m always here for you. See you soon!</p>   
+            <p>my favorite moments of the past months all involve you.</p>    
+            
+            <p></p>
+            <p><strong></strong></p>
+        </section>
+
+        <h2 style="font-family: 'Dancing Script'; margin-bottom: 20px;">Our Memories</h2>
+        
+        <div class="memory-grid">
+            <div class="memory-item">
+                <video controls>
+                    <source src="1stmeet.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="memory-caption">7th August</p>
+                <p class="memory-caption">The day we Meet First time</p>
+            </div>
+            <div class="memory-item">
+                <img src="4th.jpg" alt="Memory 2">
+                <p class="memory-caption">29th September</p>
+                <p class="memory-caption">That Garba😂</p>
+            </div>
+            <div class="memory-item">
+                <video controls>
+                    <source src="5th.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="memory-caption">6th October</p>
+                <p class="memory-caption">Phool Phool</p>
+                
+            </div>
+            <div class="memory-item">
+                <img src="111.jpg" alt="Memory 4">
+                <p class="memory-caption">18th November</p>
+                <p class="memory-caption">Sunsett🙂‍↔</p>
+            </div>
+            <div class="memory-item">
+                <img src="last.jpg" alt="Memory 5">
+                <p class="memory-caption">31st December</p>
+                <p class="memory-caption">Today😂🥂</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Always Yours &bull; 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>

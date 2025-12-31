@@ -1,0 +1,6 @@
+- [x] Update body background to light pink image
+- [x] Add CSS for floating elements container
+- [x] Add CSS for flower class
+- [x] Add CSS for teddy class
+- [x] Add keyframes for float animation
+- [ ] Add HTML for floating elements
